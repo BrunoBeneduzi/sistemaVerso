@@ -49,8 +49,25 @@ docker compose exec app composer install
 
 ### 4. Configure o ambiente
 
+Crie o arquivo `.env` na pasta `src/` com o seguinte conteúdo:
+
+```env
+APP_NAME=Laravel
+APP_ENV=local
+APP_KEY=
+APP_DEBUG=true
+APP_URL=http://localhost:8000
+
+LOG_CHANNEL=stack
+LOG_LEVEL=debug
+
+DB_CONNECTION=sqlite
+DB_DATABASE=/var/www/html/database/database.sqlite
+```
+
+Depois gere a chave da aplicação:
+
 ```bash
-docker compose exec app cp .env.example .env
 docker compose exec app php artisan key:generate
 ```
 
