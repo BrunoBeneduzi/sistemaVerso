@@ -71,13 +71,19 @@ Depois gere a chave da aplicação:
 docker compose exec app php artisan key:generate
 ```
 
-### 5. Rode as migrations e popule as tabelas base
+### 5. Crie o arquivo do banco de dados
+
+```bash
+docker compose exec app touch database/database.sqlite
+```
+
+### 6. Rode as migrations e popule as tabelas base
 
 ```bash
 docker compose exec app php artisan migrate --seed
 ```
 
-### 6. Acesse a API
+### 7. Acesse a API
 
 http://localhost:8000/api
 
