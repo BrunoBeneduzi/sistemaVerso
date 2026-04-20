@@ -205,3 +205,22 @@ GET http://localhost:8000/api/produtos-precos?per_page=5&page=2
 <img width="933" height="865" alt="image" src="https://github.com/user-attachments/assets/8702411e-169a-497f-970d-ee9c9a8fb59a" />
 
 ---
+## ⚠️ Observação Importante
+
+Antes de rodar o projeto, certifique-se de que a pasta aberta é a pasta que contem o docker-compose.
+---
+
+## 📁 Estrutura do Projeto
+
+```
+sistemaVerso-main/
+│
+├── README.md
+└── projetoVersotech/     <- ABRA ATE AQUI
+    ├── docker-compose.yml
+    ├── UMLProj.pdf
+    ├── src/
+    └── docker/
+```
+
+---
